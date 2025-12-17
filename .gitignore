@@ -1,5 +1,5 @@
 .env
-context.txt
+*.txt   
 
 venv/
 .env
