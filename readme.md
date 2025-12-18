@@ -11,6 +11,8 @@ Integrates via Telegram to add to immersion.
 
 - Streaming Grok responses
 - Allowing user to interupt generation, and for model to work around this
+    - how to do this? wait for a string of texts, then using a emotion-based timeout before sending to model?
+    - then telling the model "user interrupted with: XYZ after you said ABC" and letting it naturally fill?
 - Letting the user prompt with multiple lines, and accurately discerning where a response is appropriate
 - Making ChatID universal, so bot is accessible to everyone
 - Hosting the bot on PythonEverywhere for usage PythonEverywhere
