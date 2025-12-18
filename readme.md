@@ -11,6 +11,8 @@ Integrates via Telegram to add to immersion.
 
 - Streaming Grok responses
 - Allowing user to interupt generation, and for model to work around this
+    - how to do this? wait for a string of texts, then using a emotion-based timeout before sending to model?
+    - then telling the model "user interrupted with: XYZ after you said ABC" and letting it naturally fill?
 - Letting the user prompt with multiple lines, and accurately discerning where a response is appropriate
 - Making ChatID universal, so bot is accessible to everyone
 - Hosting the bot on PythonEverywhere for usage PythonEverywhere
@@ -22,6 +24,7 @@ Integrates via Telegram to add to immersion.
 - Adding a context summarisation system
     - Automatically compresses context window at 128k tokens (using dirt cheap model)
     - Has a "memories" file, that the model can search through and import tiny portions of relevant context. Helpful for navigating extremely long timespans of conversation
+    - another idea - 3 layer context. short prompts only use last 30 minutes if conversation, longer strings use context + memories, mesages with personal topics use the whole stack
 - Making everything modular via bot settings - clearing memory, changing emotion weight modifiers, etc.
  
 
