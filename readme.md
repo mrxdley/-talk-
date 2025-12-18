@@ -24,6 +24,7 @@ Integrates via Telegram to add to immersion.
 - Adding a context summarisation system
     - Automatically compresses context window at 128k tokens (using dirt cheap model)
     - Has a "memories" file, that the model can search through and import tiny portions of relevant context. Helpful for navigating extremely long timespans of conversation
+    - another idea - 3 layer context. short prompts only use last 30 minutes if conversation, longer strings use context + memories, mesages with personal topics use the whole stack
 - Making everything modular via bot settings - clearing memory, changing emotion weight modifiers, etc.
  
 
